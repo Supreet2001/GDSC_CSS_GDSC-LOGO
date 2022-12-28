@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .outer {
+        height: 100vh;
+        width: 100%;
+      }
+      nav {
+        height: 10%;
+        background-color: #232f3e;
+        color: white;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      main {
+        position: relative;
+        min-height: 50vh;
+        width: 100%;
+        color: yellow;
+        flex-direction: column !important;
+      }
+      .relative {
+        position: relative;
+      }
+      .box {
+        width: 300px;
+        height: 84px;
+        border-radius: 57px;
+      }
+      .inner-box {
+        width: 400px;
+      }
+      .abs {
+        position: absolute;
+      }
+      #red {
+        rotate: -30deg;
+        background-color: #fe2c25;
+      }
+      #blue {
+        rotate: 30deg;
+        background-color: #2785fc;
+        top: 65px;
+      }
+      #green {
+        rotate: 30deg;
+        background-color: #01a050;
+        z-index: 2;
+      }
+      #yellow {
+        rotate: -30deg;
+        background-color: #ffba01;
+        top: 65px;
+      }
+      .title {
+        top: 214px;
+        font-size: 40px;
+      }
+
+      .c1 {
+        color: #a61211;
+      }
+      .c2 {
+        color: #97a1e0;
+      }
+      .c3 {
+        color: #7ef1d5;
+      }
+      .c4 {
+        color: #f0da69;
+      }
+      .c5 {
+        color: #6271b2;
+      }
+      @media (max-width:800px) {
+        main{
+            transform: scale(0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <nav class="flex">
+        <h1>Q1) GDSC LOGO</h1>
+      </nav>
+      <main class="flex">
+        <div class="logo flex relative">
+          <div class="inner-box relative flex">
+            <div class="abs box" id="red"></div>
+            <div class="abs box" id="blue"></div>
+          </div>
+          <div class="inner-box relative flex">
+            <div class="abs box" id="green"></div>
+            <div class="abs box" id="yellow"></div>
+          </div>
+          <div class="title abs">
+            <span class="c1">G</span>
+            <span class="c2">D</span>
+            <span class="c3">S</span>
+            <span class="c4">C</span>
+            <span>&nbsp;</span>
+            <span class="c1">C</span>
+            <span class="c2">V</span>
+            <span class="c3">R</span>
+            <span class="c4">G</span>
+            <span class="c5">U</span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
